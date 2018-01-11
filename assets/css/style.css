@@ -9,14 +9,63 @@ a {
 .grid {
 	display: grid;
 	grid-template-columns: 4fr minmax(256px, 1fr);
-	grid-template-rows: 64px 1fr;
+	grid-template-rows: auto 1fr;
 	grid-template-areas: "header header" "gallery aside";
 	height: 100vh;
 }
 
 .header {
 	grid-area: header;
-	background-color: brown;
+}
+
+.logo-wrapper {
+	padding: 1rem;
+}
+
+.logo {
+	font-family: Roboto;
+	font-size: 1.4rem;
+	margin-right: 1rem;
+	color: rgba(0, 0, 0, .6);
+}
+
+.input {
+	border: 0;
+	border-bottom: 1px solid rgba(0, 0, 0, .6);
+	font-family: Roboto;
+	font-size: 1rem;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav-icons {
+	display: flex;
+	padding: 1rem;
+}
+
+.ic {
+	display: block;
+	height: 24px;
+	width: 24px;
+	background-repeat: no-repeat;
+}
+
+.ic-left {
+	background-image: url("icons/ic_chevron_left_black_24px.svg");
+	margin-right: .5rem;
+}
+
+.ic-right {
+	background-image: url("icons/ic_chevron_right_black_24px.svg");
+	margin-right: .5rem;
+}
+
+.ic-menu {
+	background-image: url("icons/ic_menu_black_24px.svg");
 }
 
 .gallery {
