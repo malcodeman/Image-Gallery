@@ -1,4 +1,5 @@
 body,
+h1,
 p {
 	margin: 0;
 }
@@ -100,6 +101,8 @@ a {
 .aside {
 	grid-area: aside;
 	font-family: Roboto;
+	display: flex;
+	flex-direction: column;
 }
 
 .buttons-wrapper {
@@ -155,4 +158,9 @@ a {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	margin: 4rem 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex-grow: 1;
 }
