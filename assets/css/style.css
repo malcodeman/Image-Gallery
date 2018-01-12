@@ -69,6 +69,18 @@ a {
 	background-image: url("icons/ic_menu_black_24px.svg");
 }
 
+.ic-more {
+	background-image: url("icons/ic_more_horiz_black_24px.svg");
+}
+
+.ic-facebook {
+	background-image: url("icons/facebook.svg");
+}
+
+.ic-twitter {
+	background-image: url("icons/twitter.svg");
+}
+
 .gallery {
 	grid-area: gallery;
 	display: grid;
@@ -88,7 +100,6 @@ a {
 .aside {
 	grid-area: aside;
 	font-family: Roboto;
-	padding: 1rem;
 }
 
 .buttons-wrapper {
@@ -127,4 +138,21 @@ a {
 	font-size: 1rem;
 	color: #fff;
 	cursor: pointer;
+}
+
+.social-btn-wrapper {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.social-btn-wrapper .ic-twitter,
+.ic-facebook {
+	margin-right: 1rem;
+}
+
+.margin-1 {
+	margin: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
