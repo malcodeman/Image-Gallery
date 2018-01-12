@@ -31,6 +31,12 @@ a {
 	padding: 1rem;
 }
 
+@media(min-width:576px) {
+	.logo-wrapper {
+		width: 100%;
+	}
+}
+
 .logo {
 	font-family: Roboto;
 	font-size: 1.4rem;
@@ -49,6 +55,7 @@ a {
 @media(min-width:576px) {
 	.input {
 		display: inline-block;
+		width: 40%;
 	}
 }
 
