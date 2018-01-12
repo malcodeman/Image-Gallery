@@ -19,7 +19,7 @@ a {
 @media(min-width:576px) {
 	.grid {
 		grid-template-areas: "header header" "gallery aside";
-		grid-template-columns: 4fr minmax(256px, 1fr);
+		grid-template-columns: 4fr minmax(256px, 1fr);		
 	}
 }
 

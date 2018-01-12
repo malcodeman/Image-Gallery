@@ -1,5 +1,19 @@
-let images = document.getElementsByClassName("gallery-item");
-
-for (let i = 0; i < images.length; ++i) {
-    //images[i].src = "https://source.unsplash.com/random?" + i;
+function createImage(source){
+    let img = document.createElement("img");
+    img.className = "gallery-item";
+    img.src = source;
+    document.getElementById("gallery").appendChild(img);
 }
+
+function populateGrid(counter = 25){
+    for (let i = 0; i < counter; ++i) {
+        createImage("https://source.unsplash.com/random?" + i);
+    }
+}
+
+function clearElement(Id){
+    document.getElementById(Id).innerHTML = "";
+}
+
+clearElement("gallery");
+populateGrid();
