@@ -11,9 +11,4 @@ function populateGrid(counter = 25){
     }
 }
 
-function clearElement(Id){
-    document.getElementById(Id).innerHTML = "";
-}
-
-clearElement("gallery");
 populateGrid();
