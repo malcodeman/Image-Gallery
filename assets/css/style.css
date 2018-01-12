@@ -16,6 +16,7 @@ a {
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: auto 1fr;
 	grid-template-areas: "header header" "aside aside";
+	height: 100vh;
 }
 
 @media(min-width:576px) {
@@ -120,6 +121,7 @@ a {
 	grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
 	grid-auto-rows: 256px;
 	display: none;
+	overflow-y: auto;
 }
 
 @media(min-width:576px) {
