@@ -1,1 +1,1 @@
-# Image Gallery
+# Freelance artist
