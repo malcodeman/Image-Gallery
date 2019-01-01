@@ -10,6 +10,20 @@
   padding: 3vw;
 }
 
+@media (min-width: 576px) {
+  .mobile-menu-open {
+    display: none;
+  }
+}
+
+.navbar-menu-mobile .nav-item {
+  margin-bottom: 10px;
+}
+
+.navbar-menu-mobile .nav-item:last-child {
+  margin-bottom: 0;
+}
+
 .navbar-menu-icon {
   display: flex;
   justify-content: center;

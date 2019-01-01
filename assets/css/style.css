@@ -33,6 +33,12 @@ a {
   display: none;
 }
 
+@media (min-width: 576px) {
+  .main-content-hidden {
+    display: block;
+  }
+}
+
 .header {
   padding: 3vw;
 }
