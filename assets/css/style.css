@@ -23,12 +23,24 @@ a {
   text-decoration: none;
 }
 
-.container {
-  padding: 0 3vw;
+@media (min-width: 576px) {
+  .container {
+    padding: 0 3vw;
+  }
+}
+
+.main-content-hidden {
+  display: none;
 }
 
 .header {
-  padding: 3vw 0;
+  padding: 3vw;
+}
+
+@media (min-width: 576px) {
+  .header {
+    padding: 3vw 0;
+  }
 }
 
 .navbar {
@@ -41,6 +53,17 @@ a {
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 2px;
+  color: #000;
+}
+
+.navbar-menu {
+  display: none;
+}
+
+@media (min-width: 576px) {
+  .navbar-menu {
+    display: block;
+  }
 }
 
 .navbar-menu .nav-item:first-child {
@@ -56,11 +79,36 @@ a {
 }
 
 .main {
-  padding: 3vw 0;
   display: grid;
-  grid-template-columns: repeat(4, 22vw);
-  grid-auto-rows: 22vw;
-  grid-gap: 2vw;
+  grid-template-columns: 100vw;
+  grid-auto-rows: 100vw;
+  grid-gap: 3vw;
+}
+
+@media (min-width: 576px) {
+  .main {
+    grid-template-columns: repeat(2, calc(50vw - 4vw));
+    grid-auto-rows: calc(50vw - 4vw);
+    grid-gap: 2vw;
+    padding: 3vw 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .main {
+    grid-template-columns: repeat(4, calc(25vw - 3vw));
+    grid-auto-rows: calc(25vw - 3vw);
+  }
+}
+
+.project {
+  background-color: rgba(43, 16, 16, 0.1);
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.project:hover {
+  background-color: rgba(30, 30, 30, 0.2);
 }
 
 .project-image {

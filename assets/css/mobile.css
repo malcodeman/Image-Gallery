@@ -1,0 +1,36 @@
+.mobile-menu {
+  display: none;
+}
+
+.mobile-menu-open {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 3vw;
+}
+
+.navbar-menu-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.navbar-close-icon {
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+@media (min-width: 576px) {
+  .navbar-menu-icon {
+    display: none;
+  }
+}
+
+.navbar-menu-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

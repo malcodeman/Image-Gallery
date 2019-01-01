@@ -4,10 +4,31 @@
   rel="stylesheet"
 />
 <link href="assets/css/style.css" rel="stylesheet" />
-<div class="container">
+<link href="assets/css/mobile.css" rel="stylesheet" />
+<script src="assets/scripts/script.js" async></script>
+
+<div class="mobile-menu" id="mobileMenu">
+  <header class="mobile-header">
+    <nav class="navbar-mobile">
+      <div class="navbar-close-icon" id="closeMenu">
+        <img src="assets/icons/close.svg" alt="menu" />
+      </div>
+      <div class="navbar-menu-mobile">
+        <a href="#" class="nav-item">Illustration</a>
+        <a href="#" class="nav-item">Animations</a>
+        <a href="#" class="nav-item">About</a>
+      </div>
+    </nav>
+  </header>
+</div>
+
+<div class="container" id="mainContent">
   <header class="header">
     <nav class="navbar">
       <div class="navbar-brand"><a href="#" class="nav-item">Artist</a></div>
+      <div class="navbar-menu-icon" id="openMenu">
+        <img src="assets/icons/menu.svg" alt="menu" />
+      </div>
       <div class="navbar-menu">
         <a href="#" class="nav-item">Illustration</a>
         <a href="#" class="nav-item">Animations</a>
