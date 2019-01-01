@@ -122,3 +122,35 @@ a {
   height: 100%;
   object-fit: cover;
 }
+
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 3vw;
+}
+
+@media (min-width: 576px) {
+  .footer {
+    padding: 3vw 0;
+  }
+}
+
+.footer-item {
+  margin: 0 10px;
+}
+
+.footer-item svg {
+  stroke-width: 2;
+  fill: none;
+  width: 24px;
+  height: 24px;
+  stroke: #000;
+  stroke-linecap: round;
+  stroke-linecap: round;
+  opacity: 0.8;
+  transition: stroke 0.2s ease;
+}
+
+.footer-item svg:hover {
+  stroke: #feac42;
+}
