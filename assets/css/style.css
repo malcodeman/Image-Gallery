@@ -88,6 +88,17 @@ a {
   margin-left: 10px;
 }
 
+.navbar-menu-icon .menu {
+  height: 24px;
+  width: 24px;
+  opacity: 0.8;
+  transition: fill 0.2s ease;
+}
+
+.navbar-menu-icon .menu:hover {
+  fill: #feac42;
+}
+
 .main {
   display: grid;
   grid-template-columns: 100vw;

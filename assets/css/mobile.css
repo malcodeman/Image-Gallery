@@ -37,6 +37,17 @@
   cursor: pointer;
 }
 
+.navbar-close-icon .close {
+  height: 24px;
+  width: 24px;
+  opacity: 0.8;
+  transition: fill 0.2s ease;
+}
+
+.navbar-close-icon .close:hover {
+  fill: #feac42;
+}
+
 @media (min-width: 576px) {
   .navbar-menu-icon {
     display: none;
