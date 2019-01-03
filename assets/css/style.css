@@ -15,6 +15,7 @@ input,
 p {
   margin: 0;
 }
+
 body {
   font-family: "Open Sans", sans-serif;
 }
@@ -99,7 +100,20 @@ a {
   fill: #feac42;
 }
 
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .main {
+  animation: fadein 2s;
+}
+
+.projects-grid {
   display: grid;
   grid-template-columns: 100vw;
   grid-auto-rows: 100vw;
@@ -107,7 +121,7 @@ a {
 }
 
 @media (min-width: 576px) {
-  .main {
+  .projects-grid {
     grid-template-columns: repeat(2, calc(50vw - 4vw));
     grid-auto-rows: calc(50vw - 4vw);
     grid-gap: 2vw;
@@ -116,7 +130,7 @@ a {
 }
 
 @media (min-width: 768px) {
-  .main {
+  .projects-grid {
     grid-template-columns: repeat(4, calc(25vw - 3vw));
     grid-auto-rows: calc(25vw - 3vw);
   }
